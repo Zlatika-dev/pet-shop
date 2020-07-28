@@ -28,6 +28,9 @@ body {
   display: block;
 }
 
+.main-page-nav{
+  display: flex;
+}
 @media (min-width: 40rem) {
   /* .non-style-li li {
     display: inline;
