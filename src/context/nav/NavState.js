@@ -3,8 +3,8 @@ import NavContext from './NavContext';
 import NavReducer from './NavReducer';
 import {
 
-  SHOW_NAV,
-  CLOSE_NAV
+  TOGGLE_NAV_TYPE,
+  TOGGLE_MOBILE_NAV
 } from '../types'
 
 const NavState = props => {
@@ -16,8 +16,10 @@ const NavState = props => {
 
 
   const toggleBackdrop = () => {
-    dispatch({ type: CLOSE_NAV })
+    dispatch({ type: TOGGLE_MOBILE_NAV })
   }
+
+
 
   return (
     <NavContext.Provider 

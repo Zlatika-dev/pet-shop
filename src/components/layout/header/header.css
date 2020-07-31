@@ -1,3 +1,7 @@
+.navbar{
+  display: none;
+}
+
 .navbar-mobile {
   position: fixed;
   display: flex;
@@ -10,6 +14,25 @@
   height: 100%;
   background-color: #155579;
   z-index: 101;
+}
+
+.nav-mobile-menu{
+  height: auto;
+  width: 3rem;
+  background: transparent;
+  cursor: pointer;
+  padding: 10px auto;
+  vertical-align: middle;
+  border: none;
+  margin-left: 1rem;
+}
+.nav-mobile-menu_bar{
+  width: 100%;
+  display: block;
+  height: 0.2rem;
+  background: rgb(40, 48, 63);;
+  margin: 0.6rem 0;
+  /* z-index: 1110 */
 }
 
 .nav-link {
@@ -46,7 +69,6 @@
   padding: 0.5em 0 0 0.5em;
 }
 a {
-  
   text-decoration: none;
 }
 .cart {
@@ -61,6 +83,9 @@ a {
     padding-top: 1.5rem;
   }
 
+  .nav-mobile-menu {
+    display: none;
+  }
   .navbar {
     display: flex;
     align-items: center;

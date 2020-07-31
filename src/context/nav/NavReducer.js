@@ -1,11 +1,11 @@
 import {
-  SHOW_NAV,
-  CLOSE_NAV
+  TOGGLE_NAV_TYPE,
+  TOGGLE_MOBILE_NAV
 } from '../types';
 
 export default (state, action) => {
   switch (action.type) {
-    case CLOSE_NAV:
+    case TOGGLE_MOBILE_NAV:
       return{
         ...state,
         toggle: !state.toggle

@@ -40,6 +40,9 @@ body {
   .container {
     padding: 0 15px;
   }
+  .backdrop{
+    display: none;
+  }
 }
 
 @media (min-width: 575.98px) {
