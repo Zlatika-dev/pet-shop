@@ -6,20 +6,23 @@ import Main from './pages/Main';
 import Cats from './pages/Cats';
 import Dogs from './pages/Dogs';
 import About from './pages/About';
+import NavState from './context/nav/NavState'
 
 
 function App() {
   return (
-    <Router>
-      <Fragment>
-        <Switch>
-          <Route exact path='/' component={Main} />
-          <Route exact path='/cats' component={Cats} />
-          <Route exact path='/dogs' component={Dogs} />
-          <Route exact path='/about' component={About} />
-        </Switch>
-      </Fragment>
-    </Router>
+   <NavState>
+      <Router>
+        <Fragment>
+          <Switch>
+            <Route exact path='/' component={Main} />
+            <Route exact path='/cats' component={Cats} />
+            <Route exact path='/dogs' component={Dogs} />
+            <Route exact path='/about' component={About} />
+          </Switch>
+        </Fragment>
+      </Router>
+      </NavState>
   );
 }
 

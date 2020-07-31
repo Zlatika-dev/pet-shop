@@ -1,10 +1,12 @@
 import React from 'react';
 import './footer.css';
 import '../../App.css'
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faVk, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 library.add(faVk, faFacebook, faInstagram);
+
 
 
 const Footer = () => {
@@ -13,7 +15,7 @@ const Footer = () => {
     <div className="footer">
 
       <div className="container footer-content">
-        <h1>Contact Us</h1>
+        <h1><Link to='/about'>Contact Us</Link></h1>
 
         <ul className='nets-icons'>
 

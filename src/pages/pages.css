@@ -1,0 +1,33 @@
+.main-page-nav {
+  display: block;
+}
+.cats {
+  width: 50%;
+  float: left;
+  overflow: hidden;
+}
+.dogs {
+  width: 50%;
+  float: right;
+  overflow: hidden;
+}
+
+.main-page-nav-img {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-page-nav-img h2,
+.main-page-nav-img .nav-btn {
+  position: absolute;
+  font-size: 3rem;
+}
+
+.main-page-nav-img .nav-btn {
+  bottom: 15%;
+  padding: 2rem 3rem;
+  border: 2px solid;
+}
