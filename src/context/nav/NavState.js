@@ -3,8 +3,8 @@ import NavContext from './NavContext';
 import NavReducer from './NavReducer';
 import {
 
-  TOGGLE_NAV_TYPE,
-  TOGGLE_MOBILE_NAV as SHOW_MOBILE_NAV,
+
+  SHOW_MOBILE_NAV,
   HIDE_MOBILE_NAV
 } from '../types'
 
@@ -18,7 +18,7 @@ const NavState = props => {
 
   const hideMobileNav = (e) => {
     if (e.target.classList.contains('close'))
-    dispatch({ type: HIDE_MOBILE_NAV })
+      dispatch({ type: HIDE_MOBILE_NAV })
   }
 
   const showBackdrop = () => {

@@ -1,7 +1,6 @@
 import React from 'react';
 import './header.css';
 import '../../../App.css';
-import Cart from './Cart';
 import Navbar from './Navbar';
 import MobileMenu from './MobileMenu';
 
@@ -16,7 +15,7 @@ const Header = () => {
       </div>
 
       <Navbar />
-    
+
     </div>
   )
 }

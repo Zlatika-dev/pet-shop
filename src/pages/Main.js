@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import './pages.css'
 import ImgCat from '../img/3/cat.jpg';
 import ImgDog from '../img/3/dog.jpg';
@@ -9,7 +9,7 @@ import { motion } from 'framer-motion';
 const imgVariants = {
   hover: {
     scale: 1.2,
-    
+
   },
 
 }
