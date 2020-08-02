@@ -16,7 +16,7 @@ const Header = () => {
       </div>
 
       <Navbar />
-      {/* <Cart /> */}
+    
     </div>
   )
 }

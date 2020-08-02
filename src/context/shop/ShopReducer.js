@@ -3,7 +3,9 @@ import {
   SHOW_FULLIMG,
   DELETE_ITEM,
   SHOW_NAV,
-  CLOSE_NAV
+  CLOSE_NAV,
+  SHOW_MOBILE_NAV,
+  HIDE_MOBILE_NAV
 } from '../types';
 
 export default (state, action) => {

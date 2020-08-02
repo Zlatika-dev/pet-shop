@@ -7,12 +7,12 @@ import NavContext from '../../../context/nav/NavContext'
 const Backdrop = props => {
   const navContext = useContext(NavContext);
 
-  const { toggleBackdrop, toggle } = navContext;
+  const { hideMobileNav, toggle } = navContext;
 
   
   return <div
-    className={(toggle ? 'backdrop' : 'default-backdrop')}
-    onClick={toggleBackdrop}
+    className={(toggle ? 'backdrop close' : 'default-backdrop')}
+    onClick={hideMobileNav}
   >
   </div>
 }

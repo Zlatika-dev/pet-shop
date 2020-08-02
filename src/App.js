@@ -6,6 +6,7 @@ import Main from './pages/Main';
 import Cats from './pages/Cats';
 import Dogs from './pages/Dogs';
 import About from './pages/About';
+import Cart from './pages/Cart';
 import NavState from './context/nav/NavState'
 
 
@@ -19,6 +20,7 @@ function App() {
             <Route exact path='/cats' component={Cats} />
             <Route exact path='/dogs' component={Dogs} />
             <Route exact path='/about' component={About} />
+            <Route exact path='/cart' component={Cart} />
           </Switch>
         </Fragment>
       </Router>

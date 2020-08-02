@@ -2,6 +2,8 @@ import React, { Fragment, useContext } from 'react';
 import './header.css';
 import Backdrop from './Backdrop';
 import { Link } from 'react-router-dom';
+import Cart from './Cart';
+import { motion } from 'framer-motion';
 
 
 import NavContext from '../../../context/nav/NavContext'
@@ -10,31 +12,44 @@ import NavContext from '../../../context/nav/NavContext'
 
 const Navbar = () => {
   const navContext = useContext(NavContext)
-  const { toggle, toggleBackdrop } = navContext;
-  
+  const { toggle, hideMobileNav } = navContext;
+
+
+
   return (
     <Fragment>
       <Backdrop />
-      {/* Framer Motion (for React) #11 - Animate Presence */}
-     
-      <ul className={(toggle ? 'navbar-mobile' : 'navbar')}>
+
+      <motion.ul className={(toggle ? 'navbar-mobile' : 'navbar')}
+        onClick={hideMobileNav}
+
+
+      >
         <li className="nav-link">
           <Link to='/'
+          className="close"
           >Home</Link>
         </li>
-        <li className="nav-link"
-        onClick={toggleBackdrop}>
-          <Link to='/cats'>Cats</Link>
+        <li className="nav-link"    >
+          <Link to='/cats'
+          className="close">Cats</Link>
         </li>
         <li className="nav-link">
           <Link to='/dogs'
-          onClick={toggleBackdrop}>Dogs</Link>
+          className="close"
+          >Dogs</Link>
         </li>
         <li className="nav-link">
           <Link to='/about'
-          onClick={toggleBackdrop}>About</Link>
+          className="close"
+          >About</Link>
         </li>
-      </ul>
+        <li className="nav-link"
+        >
+          <Cart />
+        </li>
+      </motion.ul>
+
     </Fragment>
   )
 }

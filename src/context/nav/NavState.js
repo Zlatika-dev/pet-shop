@@ -4,30 +4,37 @@ import NavReducer from './NavReducer';
 import {
 
   TOGGLE_NAV_TYPE,
-  TOGGLE_MOBILE_NAV
+  TOGGLE_MOBILE_NAV as SHOW_MOBILE_NAV,
+  HIDE_MOBILE_NAV
 } from '../types'
 
 const NavState = props => {
   const initialState = {
-    toggle: true
+    toggle: false
   };
 
   const [state, dispatch] = useReducer(NavReducer, initialState)
 
 
-  const toggleBackdrop = () => {
-    dispatch({ type: TOGGLE_MOBILE_NAV })
+  const hideMobileNav = (e) => {
+    if (e.target.classList.contains('close'))
+    dispatch({ type: HIDE_MOBILE_NAV })
+  }
+
+  const showBackdrop = () => {
+
+    dispatch({ type: SHOW_MOBILE_NAV })
   }
 
 
-
   return (
-    <NavContext.Provider 
-    value={{
-      toggle: state.toggle,
-      toggleBackdrop
-    }}>
-{props.children}
+    <NavContext.Provider
+      value={{
+        toggle: state.toggle,
+        hideMobileNav: hideMobileNav,
+        showBackdrop: showBackdrop
+      }}>
+      {props.children}
     </NavContext.Provider>
   )
 }

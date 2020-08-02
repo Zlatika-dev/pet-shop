@@ -4,11 +4,11 @@ import NavContext from '../../../context/nav/NavContext'
 const MobileMenu = () => {
   const navContext = useContext(NavContext);
 
-  const { toggleBackdrop } = navContext;
+  const { showBackdrop } = navContext;
 
   return (
     <div className="nav-mobile-menu"
-    onClick={toggleBackdrop}>
+    onClick={showBackdrop}>
       <span className="nav-mobile-menu_bar"></span>
       <span className="nav-mobile-menu_bar"></span>
       <span className="nav-mobile-menu_bar"></span>

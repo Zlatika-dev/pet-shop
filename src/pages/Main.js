@@ -9,8 +9,9 @@ import { motion } from 'framer-motion';
 const imgVariants = {
   hover: {
     scale: 1.2,
-    transition: { duration: 18 }
-  }
+    
+  },
+
 }
 const Main = () => {
   return (
@@ -21,6 +22,9 @@ const Main = () => {
             <motion.img src={ImgDog}
               variants={imgVariants}
               whileHover="hover"
+              transition={{
+                default: { duration: 5 }
+              }}
             />
             <h2>DOGS</h2>
             <div className="nav-btn">VIEW</div>
@@ -29,9 +33,13 @@ const Main = () => {
         <Link to='/cats'> <div
           className="main-page-nav-img cats"
         >
-          {/* 18s ease-out */}
+
           <motion.img src={ImgCat}
-            whileHover={{ scale: 1.2, transition: { ease: "easeOut", duration: 18 } }} />
+            variants={imgVariants}
+            whileHover="hover"
+            transition={{
+              default: { duration: 5 }
+            }} />
           <h2>CATS</h2>
           <div className="nav-btn">VIEW</div>
         </div>

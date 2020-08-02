@@ -14,20 +14,7 @@ body {
   height: 2000px;
 }
 
-.default-backdrop {
-  display: none;
-}
 
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(84, 126, 149, 0.7);
-  display: block;
-}
 
 
 
