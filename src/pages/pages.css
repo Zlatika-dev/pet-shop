@@ -31,3 +31,34 @@
   padding: 2rem 3rem;
   border: 2px solid;
 }
+
+.showcase {
+  background-image: url("../img/dog-and-cat.png");
+  background-size: cover;
+  background-position: center;
+  /* background-repeat: no-repeat; */
+  height: 60vh;
+  margin: 2rem 0;
+}
+
+.about p{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.about h1{
+  padding: 4rem 0 0 3rem;
+}
+.about-contacts{
+  margin: 2rem 0;
+}
+.about-contacts li{
+  line-height: 1.5rem;
+  list-style-type: none;
+  font-size: 1.8rem;
+  padding: 0.8rem;
+}
+
+
+
+
