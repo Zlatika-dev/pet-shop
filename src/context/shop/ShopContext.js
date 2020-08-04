@@ -1,5 +1,5 @@
 import {createContext} from 'react';
 
-const navContext = createContext();
+const shopContext = createContext();
 
-export default navContext;
+export default shopContext;

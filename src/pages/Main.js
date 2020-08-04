@@ -30,7 +30,8 @@ const Main = () => {
             <div className="nav-btn">VIEW</div>
           </div>
         </Link>
-        <Link to='/cats'> <div
+        <Link to='/cats'> 
+        <div
           className="main-page-nav-img cats"
         >
 
